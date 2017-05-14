@@ -3084,7 +3084,29 @@
         "description" : "${role_view-identity-providers}",
         "scopeParamRequired" : false,
         "composite" : false
+        }, {
+        "id" : "d5e2321e-847d-4661-88f2-9638194234e4",
+        "name" : "aTestRole1",
+        "scopeParamRequired" : false,
+        "composite" : false,
+        "clientRole" : false,
+        "containerId" : "master"
       }, {
+        "id" : "27fa2e8c-7540-4192-9285-49898b1a1ebe",
+        "name" : "testRole2",
+        "scopeParamRequired" : false,
+        "composite" : false,
+        "clientRole" : false,
+        "containerId" : "master"
+      }, {
+        "id" : "ab1f6c1f-99d2-48e4-b4cf-e268926caeda",
+        "name" : "testRole3",
+        "scopeParamRequired" : false,
+        "composite" : false,
+        "clientRole" : false,
+        "containerId" : "master"
+      },
+      {
         "id" : "dee394b3-231e-4300-a340-b5f2b5ef3b1d",
         "name" : "manage-identity-providers",
         "description" : "${role_manage-identity-providers}",
@@ -3188,7 +3210,31 @@
       "use for duplicate" : [ ]
     }
   },
-  "groups" : [ ],
+  "groups" : [ {
+    "id" : "566636ed-6766-4422-a2f3-ac0a7c67504f",
+    "name" : "TestGroup1",
+    "path" : "/TestGroup1",
+    "attributes" : { },
+    "realmRoles" : [ "admin", "aTestRole1"],
+    "clientRoles" : { },
+    "subGroups" : [ ]
+  }, {
+    "id" : "3ca4cd4d-7ee4-4606-943f-e4012edd7eb6",
+    "name" : "TestGroup2",
+    "path" : "/TestGroup2",
+    "attributes" : { },
+    "realmRoles" : [ "testRole2" ],
+    "clientRoles" : { },
+    "subGroups" : [ ]
+  }, {
+    "id" : "53a5b3ef-9abe-42cd-9a35-e888115b8db7",
+    "name" : "TestGroup3",
+    "path" : "/TestGroup3",
+    "attributes" : { },
+    "realmRoles" : [ "offline_access", "testRole3" ],
+    "clientRoles" : { },
+    "subGroups" : [ ]
+  }],
   "defaultRoles" : [ "offline_access" ],
   "requiredCredentials" : [ "password" ],
   "otpPolicyType" : "totp",
