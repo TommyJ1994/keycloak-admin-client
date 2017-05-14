@@ -48,6 +48,8 @@
     "eslint": "^3.5.0",
     "eslint-config-semistandard": "^7.0.0",
     "eslint-config-standard": "^6.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-react": "^6.2.0",
     "eslint-plugin-standard": "^2.0.0",
